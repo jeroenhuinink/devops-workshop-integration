@@ -6,7 +6,7 @@ pipeline {
 
   }
   stages {
-    stage('error') {
+    stage('build') {
       steps {
         tool(name: 'Latest', type: 'maven')
         sh 'mvn clean verify'
