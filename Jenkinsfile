@@ -1,8 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('') {
       steps {
+        tool(name: 'Latest', type: 'Maven')
         sh 'mvn clean verify'
       }
     }
